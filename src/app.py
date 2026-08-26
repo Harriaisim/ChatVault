@@ -100,7 +100,8 @@ def init_db():
     conn.close()
 
 init_db()
-total_chats = run_query("SELECT COUNT(*) FROM conversations")[0][0] if run_query("SELECT COUNT(*) FROM conversations") else 0
+total_chats_res = run_query("SELECT COUNT(*) FROM conversations")
+total_chats = total_chats_res[0][0] if total_chats_res else 0
 
 def clear_database():
     try:
@@ -169,7 +170,7 @@ if total_chats == 0 and not st.session_state.get("wizard_complete", False):
         st.write("")
         
         with st.spinner("Checking for local AI..."):
-            time.sleep(1) # UX pacing
+            time.sleep(1)
             is_connected, model_name = check_lm_studio()
             
         if is_connected:
@@ -193,7 +194,10 @@ if total_chats == 0 and not st.session_state.get("wizard_complete", False):
         st.write("")
         st.info(f"**{len(st.session_state.md_files)} conversations ready to import.**")
         
-        if st.button("Start Import", type="primary", use_container_width=True):
+        btn_container = st.empty()
+        if btn_container.button("Start Import", type="primary", use_container_width=True):
+            btn_container.info("☕ Importing your conversations. Sit back and relax...")
+            
             progress_bar = st.progress(0)
             status_text = st.empty()
             
@@ -254,7 +258,7 @@ if total_chats == 0 and not st.session_state.get("wizard_complete", False):
             st.rerun()
 
     st.markdown("</div>", unsafe_allow_html=True)
-    st.stop() # Halts rendering of the normal dashboard
+    st.stop() 
 
 # ---------------------------------------------------------
 # NORMAL DASHBOARD
