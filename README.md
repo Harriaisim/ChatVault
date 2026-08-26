@@ -2,8 +2,8 @@
 
 **Your AI conversations. Finally organised.**
 
-![ChatVault Dashboard](docs/dashboard.png)
-*(Note: Add screenshots to a docs/ folder in your repo later!)*
+<img width="1850" height="777" alt="image" src="https://github.com/user-attachments/assets/ca4ff801-bf22-49d0-95ff-538c49ba5d83" />
+
 
 ## What is ChatVault?
 
