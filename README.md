@@ -29,15 +29,15 @@ You can:
 ## 🚀 Quick Start
 
 ### 1. Clone or download ChatVault
-`ash
-git clone [https://github.com/Harriaisim/chatvault.git](https://github.com/Harriaisim/chatvault.git)
+
+git clone https://github.com/Harriaisim/chatvault.git
 cd chatvault
-`
+
 
 ### 2. Install dependencies
-`ash
+
 pip install -r requirements.txt
-`
+
 
 ### 3. Start Local AI
 1. Open **LM Studio**.
@@ -46,13 +46,13 @@ pip install -r requirements.txt
 
 ### 4. Launch ChatVault
 For Windows users, double-click the included batch launcher:
-`ash
+
 start.bat
-`
+
 Alternatively, run it manually:
-`ash
+
 python -m streamlit run src/app.py
-`
+
 
 ### 5. Follow the Setup Wizard
 On first launch, ChatVault guides you through importing your files.
