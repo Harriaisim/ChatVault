@@ -1,0 +1,15 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.env
+
+# Streamlit
+.streamlit/
+
+# ChatVault Local Data & Databases
+*.db
+*.db-journal
+chroma_db/
+data/
+exports/
+*.md
