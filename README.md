@@ -2,7 +2,8 @@
 
 **Your AI conversations. Finally organised.**
 
-<img width="1850" height="777" alt="image" src="https://github.com/user-attachments/assets/ca4ff801-bf22-49d0-95ff-538c49ba5d83" />
+
+<img width="1900" height="797" alt="image" src="https://github.com/user-attachments/assets/6b5c443e-3530-4b70-b4a1-70ef56c9d74f" />
 
 
 ## What is ChatVault?
